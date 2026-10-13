@@ -108,7 +108,48 @@ nav .btn:hover{background:var(--or-clair)}
 
 footer{background:#0f0702;padding:1.6rem 0;font-size:.88rem;text-align:center}
 footer a{color:var(--or-clair);text-decoration:underline;text-underline-offset:3px}
+.sel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 5%;
+ 
+}
 
+.gord {
+  width: 500px;
+  height: 500px;
+  min-width: 250px;
+  border-radius: 50%;
+ border-top-left-radius: 25px;
+ border-bottom-right-radius: 25px;
+  overflow: hidden;
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(217, 162, 27, 0.3);
+  margin: 0 auto;
+}
+
+.gord img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 860px) {
+  .sel {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .gord {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+  }
+}
 /* Tablette */
 @media (max-width:1000px){
   .grille-plats{grid-template-columns:repeat(2,1fr)}
